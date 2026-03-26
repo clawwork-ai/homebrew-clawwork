@@ -1,8 +1,11 @@
 cask "clawwork" do
-  version "0.0.11"
-  sha256 "5249e4a30f9d173b2262e0cbc372ef3f5556c48e5c57c371749545b2d2320d09"
+  arch arm: "arm64", intel: "x64"
 
-  url "https://github.com/clawwork-ai/ClawWork/releases/download/v0.0.11/ClawWork-0.0.11-mac-universal.dmg"
+  version "0.0.12"
+  sha256 arm:   "15dcad3ac5a488e9b40b40d31433f24f9d07ae76c9e6575dde03e9b21ba10b83",
+         intel: "9ca4439cad8d5781628e8dc9d37109066723b594577af1acb1618888e1b1fbfb"
+
+  url "https://github.com/clawwork-ai/clawwork/releases/download/v#{version}/ClawWork-#{version}-mac-#{arch}.dmg"
   name "ClawWork"
   desc "Desktop client for OpenClaw"
   homepage "https://github.com/clawwork-ai/clawwork"
